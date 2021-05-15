@@ -18,6 +18,7 @@ describe('jest',()=>{
     it("veryComplexHandle",()=>{
         const c: Calucurator = new Calucurator();
         expect(c.veryComplexHandle()).toBe("it's very hard...");
+        expect(c.veryComplexHandle).toHaveBeenCalledTimes(1);
     });
 
 });
